@@ -39,6 +39,54 @@ from gettext import translation
 from sys import exit as sysExit
 
 from daemon import *
+#from GTKapi import GUIapi
+#from QTapi import GUIapi
+#
+#GUI API class template
+# class GUIapi (object):          
+#   def __init__(self, icons, theme, menu, last):
+#     # icons - dict of icons for each status {"idle":"IdleIconFilePath", 
+#     #                                        "busy":["Busy1IconFilePath", Busy2IconFilePath", Busy3IconFilePath", Busy4IconFilePath", Busy5IconFilePath"],
+#     #                                        "error":"ErrorIconFilePath",
+#     #                                        "none":"NoneIconFilePath"}
+#     # theme - path to icon theme folder
+#     # menu - list of menu items, each item is a list of [id, label, action()] when action() is None - then item is disabled/unactive
+#     # last - list of menu items, each item is a list of [parent_id, name, action()] when action() is None - then item is disabled/unactive
+#     pass
+ 
+#   def updateIcon(self, status):
+#     # status one of "idle", "busy", "error", "none" - used to set corresponding icon
+#     pass
+  
+#   def updeteMenu(self, menu, last):
+#     # menu - list of updated menu items, each item is a list of [id, label, action()] when action() is None - then item is disabled/unactive
+#     # last - list of menu items, each item is a list of [parent_id, name, action()]
+#     pass
+
+#   def setTheme(self, theme):
+#     # theme - path to icon theme folder
+#     pass
+
+#   def nofify_init(self, icon, appName=None):
+#     # icon - path to the message icon file
+#     pass
+
+#   def nofify(title, message):
+#     pass
+ 
+#   def errorDialog(title, message, replays):
+#     # title, message - titler and message to show in the dialog
+#     # replays - list of possible replays. The first replay is the replay by default, the last one is the replay for closed dialog without an answer.
+#     pass
+
+#   def aboutDialog(program_name, version, copyright, license, authors):
+#     # shows the About dialogue
+#     pass
+
+#   def showOutput(output):
+#     # shows daemon output (message that is displayed as replay on 'yansex-disk status' command)
+
+#   def settingsDialog(config)
 
 class Notification(object):     # On-screen notification
 

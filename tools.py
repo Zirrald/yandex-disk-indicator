@@ -7,7 +7,7 @@ from gi.repository.GLib import timeout_add, source_remove
 from logging import getLogger
 logger = getLogger('')
 
-class Timer(object):            # Timer for triggering a function periodically
+class Timer(object):            # Timer for triggering a function periodically from main thread
   ''' Timer class methods:
         __init__ - initialize the timer object with specified interval and handler. Start it
                    if start value is not False. par - is parameter for handler call.
